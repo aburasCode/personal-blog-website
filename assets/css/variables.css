@@ -1,0 +1,55 @@
+/*-----------------------------------*\
+  #CUSTOM PROPERTY VARIABLES
+\*-----------------------------------*/
+
+/* Root Variables */
+:root {
+    /* Global Colors */
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --accent: hsl(229, 76%, 66%); /* Primary accent color */
+  
+    /* Typography - Font Sizes */
+    --fs-base: 0.85rem; /* Base font-size */
+    --fs-1: 1.875rem;   /* Large headings */
+    --fs-2: 1.5rem;
+    --fs-3: 1.25rem;
+    --fs-4: 0.875rem;
+    --fs-5: 0.75rem;    /* Small text */
+  
+    /* Spacing */
+    --py: 5rem; /* Padding for sections */
+  }
+  
+  /* Light Theme Variables */
+  .light-theme {
+    /* Background Colors */
+    --background-primary: hsl(0, 0%, 100%);
+    --background-secondary: hsl(0, 0%, 97%);
+  
+    /* Action Colors */
+    --action-primary: hsl(214, 32%, 91%);
+    --action-secondary: hsl(210, 38%, 95%);
+  
+    /* Foreground/Text Colors */
+    --foreground-primary: hsl(218, 23%, 23%);
+    --foreground-secondary: hsl(216, 15%, 52%);
+    --foreground-tertiary: hsl(214, 20%, 69%);
+  }
+  
+  /* Dark Theme Variables */
+  .dark-theme {
+    /* Background Colors */
+    --background-primary: hsl(218, 23%, 23%);
+    --background-secondary: hsl(220, 26%, 14%);
+  
+    /* Action Colors */
+    --action-primary: hsl(216, 15%, 52%);
+    --action-secondary: hsl(218, 23%, 23%);
+  
+    /* Foreground/Text Colors */
+    --foreground-primary: hsl(210, 38%, 95%);
+    --foreground-secondary: hsl(211, 25%, 84%);
+    --foreground-tertiary: hsl(214, 20%, 69%);
+  }
+  

@@ -1,0 +1,153 @@
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/* Responsive for screens larger than 550px */
+@media (min-width: 550px) {
+    /* Blog card layout */
+    .blog-card {
+      display: grid;
+      grid-template-columns: 3fr 4fr;
+      gap: 20px;
+    }
+  
+    /* Blog card banner image */
+    .blog-card-banner {
+      display: block;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+  
+    .blog-banner-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  /* Responsive for screens larger than 650px */
+  @media (min-width: 650px) {
+    /* Typography adjustments */
+    :root {
+      --fs-1: 2.25rem;
+    }
+  
+    /* Container padding */
+    .container {
+      padding: 0 30px;
+    }
+  
+    /* Navbar padding */
+    .navbar {
+      padding: 30px 0;
+    }
+  
+    /* Blog section title with decorative line */
+    .blog .h2 {
+      position: relative;
+      text-align: left;
+      padding-left: 2rem;
+    }
+  
+    .blog .h2::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: var(--action-primary);
+      width: 5px;
+      height: 100%;
+      border-radius: 5px;
+    }
+  
+    /* Blog text and profile wrapper display */
+    .blog-text,
+    .profile-wrapper {
+      display: block;
+    }
+  }
+  
+  /* Responsive for screens larger than 768px */
+  @media (min-width: 768px) {
+    /* Maximum container width */
+    .container {
+      max-width: 800px;
+    }
+  }
+  
+  /* Responsive for screens larger than 1024px */
+  @media (min-width: 1024px) {
+    /* Base typography adjustments */
+    :root {
+      --fs-base: 1rem;
+      --fs-1: 3rem;
+    }
+  
+    /* Maximum container width */
+    .container {
+      max-width: 1150px;
+    }
+  
+    /* Header button group visibility */
+    header .btn-group {
+      display: none;
+    }
+  
+    /* Header layout with flex wrapper */
+    header .flex-wrapper {
+      display: flex;
+      gap: 30px;
+    }
+  
+    /* Desktop navigation */
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    /* Hero section layout */
+    .hero {
+      text-align: left;
+    }
+  
+    .hero .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 50px;
+    }
+  
+    /* Hero section button group alignment */
+    .hero .btn-group {
+      justify-content: start;
+      gap: 30px;
+    }
+  
+    /* Main layout with aside section */
+    .main .container {
+      display: grid;
+      grid-template-columns: 5fr 2fr;
+      gap: 60px;
+    }
+  
+    /* Aside section styling */
+    .aside {
+      display: block;
+      align-self: stretch;
+    }
+  
+    /* Footer layout */
+    footer .container {
+      padding: var(--py) 30px;
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+  
+    footer .wrapper {
+      text-align: left;
+    }
+  
+    .footer-text {
+      margin: 0;
+    }
+  }  

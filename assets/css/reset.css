@@ -1,0 +1,80 @@
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+/* Basic reset for all elements */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Remove default text decoration from links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Remove list styles */
+  li {
+    list-style: none;
+  }
+  
+  /* Remove default styling for images and buttons */
+  img, button {
+    display: block;
+    border: none;
+  }
+  
+  /* Inline elements for links and spans */
+  a, span {
+    display: inline-block;
+  }
+  
+  /* Reset button styles */
+  button {
+    font: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  /* Set a consistent base font and line height */
+  html {
+    font-family: "Inter", sans-serif; /* Replace with your preferred font */
+    font-size: var(--fs-base); /* Base font size, can be adjusted in variables */
+    line-height: 1.8;
+  }
+  
+  /* Remove default focus outline, but retain focus offset for accessibility */
+  :focus {
+    outline: none;
+    outline-offset: 4px;
+  }
+  
+  /* Scrollbar styling for WebKit browsers */
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 20px;
+    border: 4px solid transparent;
+  }
+  
+  .light-theme::-webkit-scrollbar-thumb {
+    border-color: hsl(0, 0%, 90%);
+  }
+  
+  .dark-theme::-webkit-scrollbar-thumb {
+    border-color: hsl(219, 27%, 20%);
+  }
+  
+  .light-theme::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 90%);
+  }
+  
+  .dark-theme::-webkit-scrollbar-track {
+    background: hsl(219, 27%, 20%);
+  }  

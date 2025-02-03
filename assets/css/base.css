@@ -1,0 +1,102 @@
+/*-----------------------------------*\
+  #BASE STYLE
+\*-----------------------------------*/
+
+/* Typography styles for headings */
+.h1, .h2, .h3, .h4 {
+  display: block;
+  color: var(--foreground-primary);
+}
+
+.h1 {
+  font-size: var(--fs-1);
+  font-weight: 900;
+}
+
+.h2 {
+  font-size: var(--fs-2);
+  font-weight: 700;
+}
+
+.h3 {
+  font-size: var(--fs-3);
+  font-weight: 700;
+}
+
+.h4 {
+  font-size: var(--fs-4);
+  font-weight: 700;
+}
+
+/* Text sizes */
+.text-sm { font-size: var(--fs-4); }
+.text-tiny { font-size: var(--fs-5); }
+
+/* Container class for centering and padding */
+.container {
+  margin-inline: auto;
+  padding: 0 15px;
+  max-width: 1200px; /* Adjust based on your layout */
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  text-align: center;
+  min-width: 10rem;
+  border-radius: 100px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--white);
+  padding: 0.6875rem 1.1875rem;
+}
+
+.btn-primary:hover {
+  background: var(--foreground-secondary);
+  color: var(--action-primary);
+}
+
+.btn-secondary {
+  background: var(--action-secondary);
+  color: var(--foreground-secondary);
+  padding: 0.5rem 1rem;
+  border: 3px solid var(--foreground-tertiary);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent);
+}
+
+/* Utility classes for text alignment */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Utility classes for padding and margin */
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.m-1 { margin: 0.5rem; }
+.m-2 { margin: 1rem; }
+.m-auto { margin: auto; }
+
+/* Additional reusable utility classes */
+.shadow-sm {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-md {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-lg {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Border radius utilities */
+.rounded { border-radius: 0.25rem; }
+.rounded-md { border-radius: 0.5rem; }
+.rounded-lg { border-radius: 1rem; }
